@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
+    <title>My To Do List</title>
+</head>
+<body>
+    <center>
+        <div>
+            <h1>To Do's</h1>
+        </div>
+    </center>
+    <div class="row">
+        <div class="column">
+            <form id="form-1">
+                <div>
+                    <h4>Add your To Do item:</h4>
+                    <input type="text" id="textBlock">
+                </div>
+                <br>
+                <div>
+                    <input type="submit" class="buttons" id="sub-add" value="Add Task">
+                    
+                </div>
+            </form>
+        </div>
+        <div class="column">
+            <form id="form-2">
+                <div>
+                    <h4>Your To Do list:</h4>
+                    <ul id="ul">
+
+                    </ul>
+                    <input type="submit" class="buttons" id="sub-remove-1" value="Remove Completed Task">
+                    <input type="submit" class="buttons" id="sub-remove-all" value="Remove All">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- form
+input - type:text inside form - for your todo item
+
+buttons
+add button - push things into an array/list
+reset button with function -a way to remove everything in list with a button
+
+<ul id="#todo list">
+</ul>
+
+createElement
+appendChild
+
+click event listener for each item in the list, if trying to put strike-through on them -->

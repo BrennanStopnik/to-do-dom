@@ -1,0 +1,27 @@
+#textBlock {
+    width: 250px;
+    border-radius: 4px;
+}
+body {
+    background-image: url("https://img.wallpapersafari.com/phone/750/1334/60/45/k4tKOD.jpg");
+}
+
+.active {
+    text-decoration: line-through;
+}
+
+.buttons {
+    background-color: aqua;
+    border-radius: 4px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
