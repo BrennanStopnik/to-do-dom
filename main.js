@@ -7,39 +7,30 @@ let removeCompleted = document.querySelector("#sub-remove-1");
 
 form1.addEventListener('submit', function(event){
     event.preventDefault();
-    // if (textBox.value === ""){
-    //     alert("Please enter item in tex box")
-    // }
+
     let listItem = document.createElement("li");
 
     // set the text of the new element
     listItem.innerText = textBox.value;
 
-    // listItem.addEventListener('click', function(){
-    //     if (listItem.style.textDecoration !== "line-through"){
-    //         listItem.style.textDecoration = "line-through";
-    //     } else {
-    //         listItem.style.textDecoration = "";
-    //     }
+
+    // let deleteButton = document.createElement("button");
+    // deleteButton.innerText = "Delete";
+
+    // deleteButton.addEventListener('click', function(){
+    //     listItem.remove();
     // })
 
-    let deleteButton = document.createElement("button");
-    deleteButton.innerText = "Delete";
+    // listItem.appendChild(deleteButton)
 
-    deleteButton.addEventListener('click', function(){
-        listItem.remove();
-    })
+    // let editButton = document.createElement("button");
+    // editButton.innerText = "Edit";
 
-    listItem.appendChild(deleteButton)
+    // editButton.addEventListener('click', function(){
+    //     listItem.remove();
+    // })
 
-    let editButton = document.createElement("button");
-    editButton.innerText = "Edit";
-
-    editButton.addEventListener('click', function(){
-        listItem.remove();
-    })
-
-    listItem.appendChild(editButton)
+    // listItem.appendChild(editButton)
 
     // add item to ul
     ul.appendChild(listItem);
